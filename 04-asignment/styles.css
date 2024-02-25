@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+body {
+  background: rgba(59, 70, 100, 1);
+  border: 1px solid black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+main {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+main h2 {
+  margin-bottom: 1rem;
+  font-size: 28px;
+}
+main > div {
+  background: rgba(37, 45, 68, 1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* gap: 10px; */
+  padding: 20px;
+  border-radius: 12px;
+}
+main div input {
+  flex: 0 0 100px;
+
+  margin: 10px 0;
+  background: rgba(234, 227, 219, 1);
+
+  height: 60px;
+  border-radius: 12px;
+  color: rgba(59, 70, 100, 1);
+  font-size: 30px;
+}
+
+input#display {
+  background: rgba(24, 31, 50, 1);
+  width: 536px;
+  height: 142.73px;
+  border-radius: 12px;
+  color: white;
+  text-align: right;
+  font-family: 'Segoe UI';
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 74.28px;
+  cursor: auto;
+  padding: 1rem;
+}
+input[value='DEL'],
+input[value='RESET'] {
+  color: white;
+  background: rgba(100, 114, 153, 1);
+}
+input[value='RESET'] {
+  padding: 1rem;
+  flex: 0 0 44%;
+  margin-left: 0.2rem;
+}
+input[value='='] {
+  flex: 0 0 44%;
+  color: white;
+  background: rgba(209, 63, 48, 1);
+  margin-right: 1.2rem;
+}
+
+.special_class {
+  color: rgba(128, 128, 128, 0.463) !important;
+}
