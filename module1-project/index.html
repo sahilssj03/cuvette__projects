@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone paper scissor</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="root">
+      <section class="section__1">
+        <article class="article__1">
+          <span>rock</span>
+          <span>paper</span>
+          <span>scissors</span>
+        </article>
+        <article class="article__2">
+          <div>
+            <h3><span>computer</span><span>score</span></h3>
+            <p class="computer__score">0</p>
+          </div>
+          <div>
+            <h3><span>your</span><span>score</span></h3>
+            <p class="your__score">0</p>
+          </div>
+        </article>
+      </section>
+      <!-- section 2 start where game will be played -->
+      <section class="section__2">
+        <article class="initial__container">
+          <div class="triangle__container">
+            <div class="e1"></div>
+            <div class="e2"></div>
+            <div class="e3"></div>
+            <div class="img__cnt--1">
+              <img class="select__move" src="./images/paper.svg" alt="paper" />
+            </div>
+            <div class="img__cnt--2">
+              <img class="select__move" src="./images/rock.svg" alt="rock" />
+            </div>
+            <div class="img__cnt--3">
+              <img
+                class="select__move"
+                src="./images/scissor.svg"
+                alt="scissor"
+              />
+            </div>
+          </div>
+        </article>
+        <article class="game__ground close">
+          <div class="player__section">
+            <h5 class="pick">YOU PICKED</h5>
+            <div>
+              <img class="player__move" src="./images/paper.svg" alt="" />
+            </div>
+          </div>
+          <div class="left-right">
+            <div class="win__alert__container right">
+              <h1>msg</h1>
+              <h5>against</h5>
+              <div class="play__btn__container">
+                <button class="play__btn">PLAY AGAIN</button>
+              </div>
+            </div>
+          </div>
+          <div class="computer__section winner">
+            <h5 class="pick">COMPUTER PICKED</h5>
+            <div>
+              <img class="computer__move" src="./images/scissor.svg" alt="" />
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- section 2 end where game will be played -->
+      <!-- section 3 start  -->
+      <section class="section__3">
+        <article class="section__3--article__1 close">
+          <div class="close__btn__container">
+            <button class="close__rules__btn">X</button>
+          </div>
+          <div class="rules__container">
+            <h2>Rules</h2>
+            <div>
+              <ul>
+                <li>
+                  <span
+                    >Rock beats scissors, scissors beat paper, and paper beats
+                    rock.</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >Agree ahead of time whether you'll count off"rock, paper,
+                    scissors shoot" or just"rock, paper, scissors."</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >Use rock, paper, scissors to settle minor decisions or
+                    simply play to pass the time</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >Use rock, paper, scissors to settle minor decisions or
+                    simply play to pass the time</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <div class="rule__next__buttons__container">
+          <button class="rules__btn">rules</button
+          ><button class="next__btn close">next</button>
+        </div>
+      </section>
+      <!-- section 3 end  -->
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

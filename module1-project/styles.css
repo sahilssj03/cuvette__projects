@@ -1,0 +1,382 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+#root {
+  background: rgba(140, 196, 97, 1);
+  padding: 2rem;
+  min-height: 100vh;
+  max-height: 100vw;
+}
+
+#root > .section__1 {
+  border: 0.2rem solid rgba(255, 255, 255, 1);
+  border-radius: 1.3rem;
+  width: 80rem;
+  margin: 4.2rem auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#root > .section__1 > .article__1,
+#root > .section__1 > .article__2 {
+  flex: 0 0 auto;
+}
+
+#root > .section__1 > .article__1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+}
+#root > .section__1 > .article__2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(101, 101, 101, 1);
+  font-size: 3.5rem;
+  flex-basis: 40%;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: space-around;
+}
+#root > .section__1 > .article__2 > div {
+  flex: 0 0 40%;
+  border-radius: 0.9rem;
+  display: grid;
+  background: white;
+  padding: 0.7rem 0;
+}
+#root > .section__1 > .article__2 > div > h3 {
+  display: grid;
+}
+#root > .section__1 > .article__2 > div > p {
+  color: black;
+  font-size: 4.2rem;
+}
+/* section----3 start */
+/* section----3 end */
+
+#root .section__3 {
+  position: fixed;
+
+  right: 5rem;
+  bottom: 2rem;
+}
+#root > .section__3 > .section__3--article__1 {
+  margin-bottom: 2rem;
+}
+
+#root > .section__3 > .section__3--article__1 > .rules__container {
+  padding: 0.1rem;
+  background: rgba(0, 68, 41, 1);
+  border: 0.7rem solid white;
+  border-radius: 1.3rem;
+  color: white;
+  width: 34rem;
+  height: 30rem;
+}
+#root > .section__3 > .section__3--article__1 > .rules__container > h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+#root > .section__3 > .section__3--article__1 > .rules__container > div > ul {
+  list-style-type: square;
+  list-style-position: outside;
+  color: yellow;
+  margin-left: 3rem;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+#root
+  > .section__3
+  > .section__3--article__1
+  > .rules__container
+  > div
+  > ul
+  > li {
+  margin-bottom: 1rem;
+}
+
+#root
+  > .section__3
+  > .section__3--article__1
+  > .rules__container
+  > div
+  > ul
+  > li
+  > span {
+  color: white;
+}
+
+.close__btn__container > button {
+  background-color: red;
+  color: white;
+  border: 0.5rem solid white;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  position: relative;
+  z-index: 100;
+  transform: translate(32rem, 2.5rem);
+}
+.rule__next__buttons__container {
+  position: relative;
+  right: -1rem;
+  overflow: auto;
+  display: flex;
+  justify-content: end;
+}
+.rule__next__buttons__container button {
+  color: white;
+  background-color: transparent;
+  border: 0.2rem solid white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  flex: 0 0;
+  margin-left: 2rem;
+}
+/*winner page  */
+
+#root > .winner__section__1 {
+  width: 51rem;
+
+  margin: auto;
+  margin-top: 10rem;
+}
+#root > .winner__section__1 article {
+  position: relative;
+  text-align: center;
+}
+#root .winner__section__1 > article > .img__container--2 {
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#root .winner__section__1 .play__btn__container {
+  margin-top: 2rem;
+  text-align: center;
+}
+.winner__text__container {
+  margin-top: 5rem;
+  color: white;
+}
+.winner__text__container h1 {
+  font-size: 4rem;
+}
+.winner__text__container h2 {
+  font-size: 3rem;
+}
+.play__btn {
+  border: none;
+  border-radius: 0.9rem;
+  background-color: white;
+  outline: none;
+  padding: 1rem 2rem;
+}
+
+/* section2 */
+.section__2 {
+  width: 70rem;
+  height: 35rem;
+  margin: 0 auto;
+  /* position: relative; */
+  padding: 0.1rem;
+}
+.initial__container {
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+}
+.triangle__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.e1,
+.e2,
+.e3 {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  border: 0.5rem solid rgba(0, 0, 0, 0.649);
+  transform-origin: 0 0;
+}
+.e1 {
+  top: 20%;
+}
+.e2 {
+  top: 20%;
+
+  width: 72%;
+
+  transform: rotateZ(45deg);
+}
+.e3 {
+  top: 20%;
+  left: 28%;
+  transform-origin: 100% 0;
+  transform: rotateZ(-45deg);
+  width: 72%;
+}
+div[class^='img__cnt'] {
+  position: absolute;
+  height: 11rem;
+  width: 11rem;
+  z-index: 10;
+  border-radius: 50%;
+  background-color: white;
+  border: 1rem solid white;
+  padding: 1rem;
+}
+
+div[class='img__cnt--2'] {
+  border-color: rgba(0, 116, 182, 1);
+  top: 2rem;
+  left: -10%;
+}
+div[class='img__cnt--1'] {
+  border-color: rgba(255, 169, 67, 1);
+  left: 35%;
+  top: 50%;
+}
+div[class='img__cnt--3'] {
+  border-color: rgba(189, 0, 255, 1);
+  top: 2rem;
+  right: -10%;
+}
+
+.game__ground {
+  height: 35rem;
+  width: 80rem;
+  display: flex;
+  margin: 0 -5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player__section,
+.computer__section {
+  flex: 0 0 30rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.player__section div,
+.computer__section div {
+  height: 40%;
+  width: 40%;
+  flex: 0 0 40%;
+  margin: 0 auto;
+
+  border: 1rem solid transparent;
+  border-radius: 50%;
+  background-color: white;
+}
+.player__section h5,
+.computer__section h5 {
+  position: absolute;
+  color: white;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.win__alert__container {
+  padding: 1rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.win__alert__container h5 {
+  margin-bottom: 2rem;
+}
+.left-right {
+  flex: 0 0 20rem;
+  position: relative;
+
+  height: 30rem;
+}
+.left {
+  left: 0;
+  transform: translate(0%, -50%);
+}
+.right {
+  right: 0;
+  transform: translate(-25%, -50%);
+}
+
+.close {
+  display: none;
+}
+
+.winner {
+  background: radial-gradient(
+    circle,
+    rgb(0, 128, 0) 0 40%,
+    rgba(0, 128, 0, 0.7) 40% 60%,
+    rgba(0, 128, 0, 0.4) 60% 80%,
+    rgba(0, 128, 0, 0.1) 80% 100%
+  );
+}
