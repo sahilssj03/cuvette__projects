@@ -5,7 +5,7 @@ import './notes.css'
 import Note from '../note'
 
 const Notes = () => {
-  const { setModal, notes, showNoteData } = useAppContext()
+  const { setModal, notes, showNoteData,setShowNoteData } = useAppContext()
 
   return (
     <section
@@ -21,7 +21,7 @@ const Notes = () => {
           return <Note key={v4()} {...note} />
         })}
       </article>
-      <button className='create__new__group' onClick={() => setModal('open')}>
+      <button className='create__new__group' onClick={() => {setShowNoteData(false);setModal('open')}}>
         <span>+</span>
       </button>
     </section>
