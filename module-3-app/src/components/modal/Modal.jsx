@@ -14,7 +14,7 @@ const Modal = () => {
   const [name, setName] = useState('')
   const [color, setColor] = useState('')
   const [error, setError] = useState(false)
-  const { setModal, setNotes } = useAppContext()
+  const { setModal, setNotes,setNotesData, setShowNoteData } = useAppContext()
   const handleSubmit = (e) => {
     e.preventDefault()
     const gn = name.trim()
@@ -35,8 +35,14 @@ const Modal = () => {
     localStorage.setItem('allNotes', JSON.stringify(allNotes))
     setModal('close')
     setNotes(allNotes)
+    // new changes
+     setShowNoteData(true)
+    const notesData = JSON.parse(localStorage.getItem('allNotes')).find(
+      (note) => note.id === id
+    )
 
-    console.log(color, name)
+    setNotesData(() => [{ ...notesData }])
+    // console.log(color, name)
   }
   const handleModalClick = (e) => {
     if (e.target.className === 'wrapper') {
