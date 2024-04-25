@@ -1,0 +1,88 @@
+.notes__container {
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  border: 0.1rem solid rgba(204, 204, 204, 1);
+}
+.notes__title {
+  width: 90%;
+  margin: 2rem auto;
+  font-weight: 500;
+  font-size: 3.152rem;
+  letter-spacing: 2%;
+  /* border: 0.1rem solid red; */
+}
+.notes {
+  width: 90%;
+  /* border: 0.1rem solid red; */
+  margin: 2rem auto;
+  overflow-y: scroll;
+  max-height: 80vh;
+  /* border: 0.1rem solid red; */
+}
+
+.notes::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.notes::-webkit-scrollbar-track {
+  background: rgba(204, 204, 204, 1);
+}
+
+.notes::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.notes::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.create__new__group {
+  position: absolute;
+  width: 7.5rem;
+  height: 7.5rem;
+  background: rgba(2, 0, 139, 1);
+  color: white;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 3.908rem;
+  letter-spacing: 2%;
+  right: 3rem;
+  z-index: 500;
+  bottom: 3rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.hide__notes__container {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .notes__container {
+    width: 35rem;
+    flex: 0 0 35rem !important;
+  }
+  .notes {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .notes__title {
+    text-align: center;
+    margin: 2 auto;
+  }
+  .hide__notes__container {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .notes__container {
+    width: 50rem;
+    flex: 0 0 50rem !important;
+  }
+  .hide__notes__container {
+    display: block;
+  }
+}

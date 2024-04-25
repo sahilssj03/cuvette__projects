@@ -1,0 +1,236 @@
+.single__person__notes__header {
+  display: flex;
+  justify-items: center;
+  background-color: rgba(0, 31, 139, 1);
+  width: 100%;
+  padding-left: 1rem;
+  height: 6rem;
+  color: white;
+}
+.note__name__heading {
+  flex: 1 0 10rem;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  /* border: 0.1rem solid red; */
+}
+.note__name__image {
+  height: 4rem;
+  flex: 0 0 4rem;
+  display: block;
+  border-radius: 50%;
+  background-color: rgba(0, 71, 255, 1);
+  text-transform: capitalize;
+}
+.heading__note__name {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-left: 2rem;
+  max-width: 50vw;
+  overflow: hidden;
+}
+.note__name__image span {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 1.6rem;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+}
+.go__back {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
+
+.written__notes {
+  /* min-height: 20rem; */
+  height: calc(100vh - 19rem);
+  background-color: rgba(220, 231, 247, 1);
+  overflow-y: scroll;
+
+  padding-bottom: 4rem;
+  position: relative;
+}
+.written__notes::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.written__notes::-webkit-scrollbar-track {
+  background: rgba(204, 204, 204, 1);
+}
+
+.written__notes::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+.written__notes::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.written__note__cont {
+  width: 90%;
+  min-height: 27rem;
+  margin: 2rem auto;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 0.01rem;
+  position: relative;
+  padding-bottom: 5rem;
+
+  z-index: 1000;
+}
+
+.txt__note {
+  margin: 2rem;
+  width: calc(100% - 4rem);
+  word-break: break-all;
+  font-weight: 400;
+  line-height: 2.082rem;
+  letter-spacing: 3.5%;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.date {
+  height: 1.3rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: rgba(53, 53, 53, 1);
+}
+
+.write__new__note {
+  border: 2rem solid rgba(0, 31, 139, 1);
+  height: 13rem;
+  position: relative;
+}
+.save__note__btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#note {
+  display: block;
+  width: 100%;
+  height: 9rem;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+#note:focus {
+  outline: none;
+}
+.design {
+  height: 2rem!;
+  display: inline-block;
+  top: -5rem;
+  left: 1.6%;
+  width: 95.5%;
+  background-color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  border-bottom: 3rem solid white;
+  position: absolute;
+}
+.showbackground {
+  display: none;
+}
+/*  */
+@media screen and (min-width: 768px) {
+  .single__person__notes__header {
+    height: 9.8rem;
+    padding-left: 2rem;
+  }
+  .note__name__image {
+    height: 6rem;
+    flex: 0 0 6rem;
+    display: block;
+  }
+  .note__name__image span {
+    font-size: 2rem;
+  }
+  .heading__note__name {
+    font-size: 2.8rem;
+  }
+  .hide__btn {
+    display: none;
+  }
+  .single__person__notes__container {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  #note {
+    font-size: 2.5rem;
+  }
+  .txt__note {
+    font-size: 1.8rem;
+  }
+  .written__notes {
+    /* min-height: 20rem; */
+    height: calc(100vh - 23rem);
+    background-color: rgba(220, 231, 247, 1);
+    overflow-y: scroll;
+
+    padding-bottom: 4rem;
+  }
+  .design {
+    display: none;
+  }
+
+  .showbackground {
+    overflow: hidden;
+    display: block;
+    background: rgba(218, 229, 245, 1);
+    height: inherit;
+    flex: 1 0;
+    background-position: center;
+    background-size: 50% 50%;
+    position: relative;
+  }
+  .before__actual__data {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-70%);
+  }
+  .img__container {
+    /* border: 0.1rem solid black; */
+    width: 80%;
+    margin: 0 auto;
+  }
+  .app__title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 2rem;
+  }
+  .some__text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .enc {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+  }
+}
