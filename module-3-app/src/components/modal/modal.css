@@ -9,7 +9,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10000;
   background-color: rgba(47, 47, 47, 0.75);
   overflow: scroll;
 }
